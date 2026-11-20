@@ -1,0 +1,29 @@
+swift-irodori-tts
+Copyright 2026 sudosanet
+
+This is an unofficial Swift port. It is not affiliated with or endorsed by the authors of the works below.
+
+Source code in this repository is licensed under the Apache License, Version 2.0 (LICENSE).
+Parts of it are ports of Irodori-TTS code (text normalization, rare-token splitting, inference flow).
+
+The model release (GitHub Releases) contains converted weights and data from the works below, with their license texts:
+
+- Irodori-TTS v4.1 Small MF (code and weights), MIT License, Copyright (c) 2026 Aratako
+  https://github.com/Aratako/Irodori-TTS  https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
+- ModernBERT-ja-310m (text backbone and tokenizer), MIT License, Copyright (c) 2025 SB Intuitions
+  https://huggingface.co/sbintuitions/modernbert-ja-310m
+- Semantic-DACVAE-Japanese-32dim (audio codec), MIT License, Aratako
+  https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim
+- DACVAE (code and weights the above is based on), Apache License 2.0, Meta Platforms, Inc.
+  https://github.com/facebookresearch/dacvae  https://huggingface.co/facebook/dacvae-watermarked
+
+The converter (Tools/convert) uses coreai-torch and coreai-opt (BSD 3-Clause, Apple Inc.).
+
+The Irodori-TTS model card adds these ethical notes, reproduced here for your information:
+
+  1. No Impersonation: Do not use this model to clone or impersonate the voice of any individual (e.g., voice actors,
+     celebrities, public figures) without their explicit consent.
+  2. No Misinformation: Do not use this model to generate deepfakes or synthetic speech intended to mislead others or
+     spread misinformation.
+  3. Voice Generation Disclaimer: When generating speech purely from text or captions without using reference audio,
+     it is possible that the generated voice may coincidentally resemble that of a real person.

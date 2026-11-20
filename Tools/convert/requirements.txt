@@ -1,0 +1,7 @@
+# Plus the dependencies of the Irodori-TTS clone (its requirements.txt).
+coreai-torch==0.4.3
+coreai-opt==0.4.0
+torch==2.13.0
+numpy>=2
+huggingface_hub
+descript-audiotools==0.7.2
